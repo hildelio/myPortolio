@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import ChooseTheme from '../pages/ChooseTheme'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import '../css/header.css'
 
 class Header extends Component {
   render() {
     return (
-      <header>
-        <nav>
+      <header className='header'>
+        <nav className='header-nav'>
           <Link to='/home'>Home</Link>
           <Link to='/about'>About Me</Link>
           <Link to='/projects'>Projects</Link>
           <Link to='/contact'>Contact</Link>
+          <GitHubIcon color='secondary' />
         </nav>
-        <section>
-          <ChooseTheme /> 
-        </section>
-        
       </header>
     );
   }
