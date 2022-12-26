@@ -25,13 +25,16 @@ body {
 }
 
 .header-nav a {
+  background-color: pink;
+  border-radius: 5px;
   text-decoration: none;
-  color: whitesmoke;
+  color: #9c27b0;
   text-shadow: 0.1em 0.1em 0.2em   pink;
   font-weight: bolder;
   font-size: 150%;
   margin-top: 2%;
   overflow: hidden;
+  opacity: 0.9;
 }
 
 .header-nav a:hover {
@@ -43,5 +46,15 @@ body {
   background-color: pink;
   border-radius: 5px;
   box-shadow: 0.1em 0.1em 0.1em whitesmoke;
-  color: red;
+}
+
+.section-nav {
+  display: flex;
+  margin-top: 2%;
+  width: 10%;
+}
+
+.section-nav a {
+  width: auto;
+  margin-left: 10%;
 }
