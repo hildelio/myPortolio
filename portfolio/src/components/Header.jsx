@@ -12,7 +12,6 @@ class Header extends Component {
           <Link to='/'>Home</Link>
           <Link to='/about'>About Me</Link>
           <Link to='/projects'>Projects</Link>
-          <Link to='/contact'>Contact</Link>
           <section className='section-nav'>
             <a href='https://github.com/hildelio' target='_blank' rel="noreferrer">
               <GitHubIcon color='secondary' />

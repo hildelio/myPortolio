@@ -2,10 +2,6 @@ html {
   background-image: url('../assets/home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 .home-content {
@@ -13,4 +9,9 @@ html {
   display: flex;
   flex-direction: column;
   margin-top: 15%;
+}
+
+.design-info {
+  margin: 180% 0 0 480%;
+  width: 100%;
 }
