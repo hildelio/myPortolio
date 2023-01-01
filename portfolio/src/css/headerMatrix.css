@@ -1,0 +1,58 @@
+.header-matrix {
+  padding: 1%;
+  overflow: hidden;
+  background-image: url('../assets/headerMatrix.jpg');
+  background-size: cover;
+  height: 10vh;
+  width: 100%;
+  opacity: 0.85;
+}
+
+.header-nav-matrix {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-chooseThemeContent-matrix {
+  color: white;
+  display: flex;
+  font-size: 150%;
+  font-weight: bolder;
+  margin-top: 2%;
+  opacity: 0.9;
+  overflow: hidden;
+  padding: 0.7%;
+  text-decoration: none;
+  text-shadow: 0.1em 0.1em 0.2em   white;
+}
+
+.header-nav-matrix a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em   white;
+  font-weight: bolder;
+  font-size: 150%;
+  margin-top: 2%;
+}
+
+.header-nav-matrix a:hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em   green;
+  font-weight: bolder;
+  font-size: 150%;
+  margin-top: 2%;
+}
+
+.section-nav-matrix {
+  display: flex;
+  margin-top: 2%;
+  width: 10%;
+}
+
+.section-nav-matrix a {
+  width: auto;
+  margin-left: 10%;
+}
