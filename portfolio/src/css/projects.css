@@ -1,0 +1,8 @@
+.app-projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 3%;
+  opacity: 0.8;
+}

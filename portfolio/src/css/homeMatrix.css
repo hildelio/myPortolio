@@ -1,0 +1,15 @@
+.app-container-matrix {
+  background: black;
+  color: #2e7d32;
+  height: 100vh;
+}
+
+.home-content-matrix {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-rabbit {
+  margin: 20% 0 0 90%;
+}
