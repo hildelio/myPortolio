@@ -1,22 +1,30 @@
 import React, { Component } from 'react';
 import Content from './components/Content';
 import Header from './components/Header';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types'
 
 class App extends Component {
-  state ={
-    defaultTheme: true,
-    matrixTheme: false,
-    personalTheme: false,
-  }
+
   render() {
-    const {defaultTheme, matrixTheme, personalTheme} = this.state;
+    const {matrixTheme, personalTheme} = this.props;
     return (
-      <div>
-        <Header Default={defaultTheme} Matrix={matrixTheme} Personal={personalTheme} />
-        <Content defaultTheme={defaultTheme} matrixTheme={matrixTheme} personalTheme={personalTheme} />
+      <div className={personalTheme ? 'app-container-personal' : matrixTheme ? 'app-container-matrix' : 'app-container'}>
+        <Header />
+        <Content />
       </div>
     );
   }
 }
 
-export default App;
+Header.propTypes = {
+  personalTheme: PropTypes.bool,
+  matrixTheme: PropTypes.bool,
+}.isRequired;
+
+const mapStateToProps = (state) => ({
+  personalTheme: state.theme.personalTheme,
+  matrixTheme: state.theme.matrixTheme,
+});
+
+export default connect(mapStateToProps)(App);

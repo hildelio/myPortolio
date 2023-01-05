@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import aboutMe from '../assets/aboutMe.png';
+import { connect } from 'react-redux';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PropTypes from 'prop-types'
 import '../css/aboutMe.css'
 
 class AboutMe extends Component {
   render() {
+    const { personalTheme, matrixTheme} = this.props;
     return (
       <div className="app-aboutMe">
           <div className="picture">
@@ -13,14 +17,9 @@ class AboutMe extends Component {
               alt="avatar"
             />
             <p>Connect with me:{' '}
-              <a href="https://linkedin.com/in/hildelio-junior" target="blank">
-                <img
-                  src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-                  alt="hildelio"
-                  height="20"
-                  width="20"
-                />
-              </a>
+            <a href='https://linkedin.com/in/hildelio-junior' target='_blank' rel="noreferrer">
+              <LinkedInIcon color={personalTheme ?'secondary' : matrixTheme ? 'success' : 'secondary'} />
+            </a>
             </p>
           </div>
         <img className="object-img" src={aboutMe} alt='aboutMe' />
@@ -29,4 +28,14 @@ class AboutMe extends Component {
   }
 }
 
-export default AboutMe;
+AboutMe.propTypes = {
+  personalTheme: PropTypes.bool,
+  matrixTheme: PropTypes.bool,
+}.isRequired;
+
+const mapStateToProps = (state) => ({
+  personalTheme: state.theme.personalTheme,
+  matrixTheme: state.theme.matrixTheme,
+});
+
+export default connect(mapStateToProps)(AboutMe);

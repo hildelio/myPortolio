@@ -4,7 +4,6 @@
   background-image: url('../assets/headerMatrix.jpg');
   background-size: cover;
   height: 10vh;
-  width: 100%;
   opacity: 0.85;
 }
 
@@ -26,6 +25,21 @@
   padding: 0.7%;
   text-decoration: none;
   text-shadow: 0.1em 0.1em 0.2em   white;
+}
+
+.header-chooseTheme-matrix {
+  background-color: #2e7d32;
+  border-radius: 5px;
+  color: white;
+  border:outset white;
+}
+
+.header-chooseTheme-matrix:hover {
+  background-color: #2e7d32;
+  border-radius: 5px;
+  box-shadow: 0.1em 0.1em 0.1em #2e7d32;
+  color: white;
+  border:outset #2e7d32;
 }
 
 .header-nav-matrix a {
